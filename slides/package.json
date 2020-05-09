@@ -1,0 +1,16 @@
+{
+  "name": "PITCHME",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sasaki_K",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "marp --html --server .",
+    "build": "marp --html --pdf --allow-local-files --title 'Linux Hands-on' PITCHME.md -o ./slide.pdf",
+    "export": "marp PITCHME.md PITCHME.html"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^0.15.0"
+  }
+}
